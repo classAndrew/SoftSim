@@ -10,6 +10,7 @@
 1. Have node and npm installed
 2. Typescript compiler
 3. esbuild (optional)
+4. Webpack
 
 ### Give it a try!
 1. git clone https://github.com/classAndrew/SoftSim.git
