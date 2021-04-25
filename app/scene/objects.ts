@@ -160,7 +160,7 @@ class SoftBody extends Entity {
     // radius of each particle
     radius = 10;
 
-    constructor(pos: Vec2, width = 10, height = 1) {
+    constructor(pos: Vec2, width = 7, height = 7) {
         super(pos);
         this.pMatrix = [...Array(height)].map(e=>Array(width));
         for (var i = height-1; i >= 0; i--) {
