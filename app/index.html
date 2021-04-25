@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Soft Body Simulation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div class="title">
+        <div class="name">Soft Body Simulator</div>
+        <div class="byline">
+            <div>by Andrew</div> 
+            <a href="https://github.com/classAndrew" class="githublink" style="text-decoration: none;">@classAndrew</a>
+        </div>
+    </div>
+    <div class="main">
+        <canvas id="cv"> </canvas>
+        <div>
+            <div id="coords">0, 0</div>
+            <div id="fps">0 FPS</div>
+            <div class="sliders">
+                <div id="gtext">Gravity</div>
+                <input id="gravity" type="range" min="0" max="15" value="9.81" step="0.01">
+                <div>Spring Length</div>
+                <input id ="apart" type="range" min="15" max="100" value="50" step="0.01">
+                <div>Damping</div>
+                <input id="damping" type="range" min="0.0" max="1.0" value="0.9" step="0.01">
+                <div>Spring Constant</div>
+                <input id="k" type="range" min="1" max="10" value="5.8" step="0.01">
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.bundle.js"></script>
+</body>
+
+</html>

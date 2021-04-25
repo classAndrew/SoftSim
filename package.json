@@ -1,0 +1,20 @@
+{
+  "name": "softsim",
+  "version": "1.0.0",
+  "description": "Soft body simulation written in typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no tests installed\" && exit 1",
+    "build": "tsc && webpack app/app.js -o app/app.bundle.js --mode=production",
+    "esbuild": "esbuild --bundle app/app.ts --outfile=app/app.bundle.js --loader:.ts=ts",
+    "type": "tsc -noEmit",
+    "build:dev": "tsc && webpack app/app.js -o app/app.bundle.js --mode=development",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.14.41",
+    "express": "^4.17.1"
+  }
+}
